@@ -1,0 +1,10 @@
+header {
+    height: 25vh;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    gap:5%;
+}
