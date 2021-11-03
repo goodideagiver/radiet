@@ -1,10 +1,53 @@
-header {
-    height: 25vh;
+:root {
+    --accent-color: #93c039;
 }
 
-.grid-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    gap:5%;
+body, html {
+    margin: 0;
+    padding: 0;
 }
+
+.slider-container {
+    display: flex;
+    height: 30vh;
+    gap: 10px;
+    width: 300vw;
+    padding: 0px 10px;
+    margin: 15px 0px;
+}
+
+.slider-container > div {
+    background-color: rgb(209, 209, 209);
+    width: calc(100vw - 20px);
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
+}
+
+header > img {
+    display: block;
+    height: 20vh;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--accent-color);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+nav > button {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    color: var(--accent-color);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    user-select: none;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
+}
+
