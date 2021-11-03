@@ -2,6 +2,10 @@
     --accent-color: #93c039;
 }
 
+* {
+    font-family: Arial;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -51,3 +55,27 @@ nav > button {
     box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
 }
 
+section {
+    width: 100%;
+    margin: 10vh 0px;
+}
+
+.wizyta-button {
+    display: block;
+    margin: auto;
+    background-color: #93c039;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    user-select: none;
+    color: white;
+    transition: all 0.1s;
+    width: 80%;
+    text-align: center;
+}
+
+.wizyta-button:hover {
+    box-shadow: inset white 0px 0px 15px 20px;
+    color: black;
+    border: solid black 2px;
+}
