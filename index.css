@@ -16,16 +16,22 @@ body, html {
     height: 30vh;
     gap: 10px;
     width: 300vw;
-    padding: 0px 10px;
     margin: 15px 0px;
+    padding: 0px 10px;
 }
 
 .slider-container > div {
     background-color: rgb(209, 209, 209);
     width: calc(100vw - 20px);
     border-radius: 25px;
-    padding: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.164);
+}
+
+.slider-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
 }
 
 header > img {
