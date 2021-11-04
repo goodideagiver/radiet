@@ -53,29 +53,74 @@ nav > button {
     height: 60px;
     user-select: none;
     box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav > button:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
 }
 
 section {
     width: 100%;
-    margin: 10vh 0px;
+    margin: 10vh auto;
+    max-width: 1000px;
 }
 
-.wizyta-button {
+.wizyta-button-wrapper {
     display: block;
     margin: auto;
-    background-color: #93c039;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    user-select: none;
-    color: white;
-    transition: all 0.1s;
-    width: 80%;
-    text-align: center;
+    width: min-content;
 }
 
-.wizyta-button:hover {
-    box-shadow: inset white 0px 0px 15px 20px;
-    color: black;
-    border: solid black 2px;
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+    user-select: none;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    stroke: var(--accent-color);
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: var(--accent-color);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
 }
