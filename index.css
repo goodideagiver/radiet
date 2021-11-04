@@ -124,3 +124,29 @@ section {
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
 }
+
+.person {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+    border: solid 5px var(--accent-color);
+}
+
+.person img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.person h1 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.person h2 {
+    font-size: 1rem;
+    margin-top: 0px;
+}
