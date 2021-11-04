@@ -67,6 +67,11 @@ nav > button:hover {
     text-align: center;
 }
 
+.m-nav li:active {
+    background-color: white;
+    color: var(--accent-color);
+}
+
 .m-nav a {
     color: white;
     text-decoration: none;
@@ -77,7 +82,14 @@ nav > button:hover {
 
 
 .nav-x {
-
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    width: fit-content;
+    margin: 5% auto;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 section {
