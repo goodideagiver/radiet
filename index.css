@@ -76,6 +76,7 @@ nav > button:hover {
     top: 0px;
     z-index: 1;
     left: -100%;
+    transition: left .2s ease-out;
 }
 
 .m-nav ul {
