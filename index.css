@@ -67,6 +67,17 @@ nav > button:hover {
     transform: scale(0.9);
 }
 
+.m-nav {
+    background-color: var(--accent-color);
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    left: -100%;
+}
+
 section {
     width: 100%;
     margin: 10vh auto;
