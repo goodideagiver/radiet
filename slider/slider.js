@@ -28,10 +28,15 @@ slides.forEach((slide, index) => {
 window.oncontextmenu = function (event) {
   event.preventDefault()
   event.stopPropagation()
+
   return false
+
+
+
 }
 
 function touchStart(index) {
+
   return function (event) {
     currentIndex = index
     startPos = getPositionX(event)
@@ -43,6 +48,7 @@ function touchStart(index) {
 }
 
 function touchEnd() {
+
   isDragging = false
   cancelAnimationFrame(animationID)
 
@@ -78,7 +84,38 @@ function setSliderPosition() {
 }
 
 function setPositionByIndex() {
+
   currentTranslate = currentIndex * -window.innerWidth
   prevTranslate = currentTranslate
   setSliderPosition()
+  arrow.setArrows()
 }
+
+
+
+
+const arrow = new function(){
+  this.left = document.getElementById('left-arrow')
+  this.right = document.getElementById('right-arrow')
+
+  this.animationTime = 0.5
+  this.hidden = `visibility: hidden; animation: arrow-hidden ${this.animationTime}s`
+  this.show = `visibility: visible; animation: arrow-show ${this.animationTime}s`
+
+  this.setArrows = ()=>{
+    if (currentIndex == 0) {
+      this.left.style = this.hidden
+    }else{
+      this.left.style = this.show
+    }
+  
+    if (slides.length - 1 == currentIndex) {
+      this.right.style = this.hidden
+    }else{
+      this.right.style = this.show
+    }
+
+  }
+
+}
+arrow.setArrows()
