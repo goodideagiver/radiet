@@ -60,22 +60,56 @@ section {
     margin: 10vh 0px;
 }
 
-.wizyta-button {
+.wizyta-button-wrapper {
     display: block;
     margin: auto;
-    background-color: #93c039;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    user-select: none;
-    color: white;
-    transition: all 0.1s;
-    width: 80%;
-    text-align: center;
+    width: min-content;
 }
 
-.wizyta-button:hover {
-    box-shadow: inset white 0px 0px 15px 20px;
-    color: black;
-    border: solid black 2px;
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    stroke: var(--accent-color);
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: var(--accent-color);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
 }
