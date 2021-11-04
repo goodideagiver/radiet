@@ -77,12 +77,30 @@ nav > button:hover {
     z-index: 1;
     left: -100%;
     transition: left .2s ease-out;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .m-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    line-height: 3;
+    text-align: center;
+}
+
+.m-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.nav-x {
+
 }
 
 section {
