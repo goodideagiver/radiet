@@ -5,21 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider/slider.css">
+
     <script src="https://kit.fontawesome.com/ba957681b0.js"></script>
+    <script src="index.js"></script>
     <title>Radiet</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="img/logo.jpg" alt="" srcset="">
-        <div style="overflow: scroll;">
+ 
+        <div style="overflow: hidden;">
             <div class="slider-container">
-                <div><img src="img/slider/1.jpg" alt="" srcset=""></div>
-                <div><img src="img/slider/placeholder.png" alt="" srcset=""></div>
-                <div><img src="img/slider/placeholder.png" alt="" srcset=""></div>
+                <div class="slide">
+                    <img src="img/slider/1.jpg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/slider/placeholder.png" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/slider/placeholder.png" alt="" />
+                </div>
             </div>
         </div>
+
         <nav>
-            <button>
+            <div class="m-nav" id="mob-nav"> 
+                <button onclick="hideMenu()"><i class="fas fa-times nav-x"></i></button>
+                <ul>
+                    <li><a href="">Link</a></li>
+                    <li><a href="">Link</a></li>
+                    <li><a href="">Link</a></li>
+                    <li><a href="">Link</a></li>
+                </ul>
+            </div>
+            <button onclick="showMenu()">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
@@ -56,10 +76,35 @@
         Metamorfozy
     </section>
     <section>
-        Lista korzyści
+        <div class="korzysci-wrapper">
+            <div>
+                <div>
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <h2>Smaczna dieta</h2>
+                <p>Dopasowana według twoich ulubionych potraw.</p>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-weight-hanging"></i>
+                </div>
+                <h2>Chudniesz prawidłowo</h2>
+                <p>Prwidłowe stosowanie się do diety powoduje brak efektu "jojo"</p>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h2>Zdrowsze życie</h2>
+                <p>Dieta wpływa na wiele aspektów twojego zdrowia</p>
+            </div>
+        </div>
     </section>
     <footer>
         Footer
     </footer>
 </body>
 </html>
+
+
+<script src="slider/slider.js"></script>
