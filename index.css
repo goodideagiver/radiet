@@ -53,11 +53,21 @@ nav > button {
     height: 60px;
     user-select: none;
     box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+nav > button:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.308);
 }
 
 section {
     width: 100%;
-    margin: 10vh 0px;
+    margin: 10vh auto;
+    max-width: 1000px;
 }
 
 .wizyta-button-wrapper {
@@ -83,6 +93,7 @@ section {
     font-weight:900;
     font-size:17px;
     letter-spacing: 0.045em;
+    user-select: none;
 }
 
 .btn svg {
