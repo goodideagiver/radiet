@@ -72,6 +72,7 @@ nav > button:hover {
 .m-nav a:active {
     background-color: white;
     color: var(--accent-color);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .m-nav a {
@@ -85,19 +86,23 @@ nav > button:hover {
 
 
 .nav-x {
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: var(--accent-color);
     font-size: 45px;
-    width: fit-content;
+    width: 75px;
+    height: 75px;
     margin: 10% auto;
-    padding: 10px;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform .5s;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    user-select: none;
 }
 
 .nav-x:active {
-    transform: rotate(180deg);
+    transform: scale(0.8);
 }
 
 section {
