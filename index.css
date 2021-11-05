@@ -46,7 +46,7 @@ nav > button:hover {
 
 .m-nav {
     background-color: var(--accent-color);
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
     position: fixed;
     width: 100%;
@@ -61,6 +61,7 @@ nav > button:hover {
 }
 
 .m-nav ul {
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -68,7 +69,7 @@ nav > button:hover {
     text-align: center;
 }
 
-.m-nav li:active {
+.m-nav a:active {
     background-color: white;
     color: var(--accent-color);
 }
@@ -78,19 +79,25 @@ nav > button:hover {
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    padding: 10px;
+    width: 100%;
+    display: block;
 }
 
 
 .nav-x {
     background-color: transparent;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
     width: fit-content;
-    margin: 5% auto;
+    margin: 10% auto;
     padding: 10px;
     border: none;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.nav-x:active {
+    transform: rotate(180deg);
 }
 
 section {
