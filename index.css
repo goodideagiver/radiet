@@ -52,9 +52,9 @@ nav > button:hover {
     width: 100%;
     top: 0px;
     z-index: 1;
-    left: -100%;
+    transform: translate(-100%,0%);
     -webkit-transition: -webkit-left .2s ease-out;
-    transition: left .2s ease-out;
+    transition: transform .2s ease-out;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
