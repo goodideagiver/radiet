@@ -53,6 +53,7 @@ nav > button:hover {
     top: 0px;
     z-index: 1;
     left: -100%;
+    -webkit-transition: left .2s ease-out;
     transition: left .2s ease-out;
     display: flex;
     justify-content: space-evenly;
