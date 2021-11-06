@@ -86,19 +86,15 @@ nav > button:hover {
 
 
 .nav-x {
-    background-color: white;
-    color: var(--accent-color);
+    color: white;
     font-size: 45px;
-    width: 75px;
-    height: 75px;
     margin: 10% auto;
     border: none;
     cursor: pointer;
     transition: transform .5s;
     text-align: center;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     user-select: none;
+    background-color: transparent;
 }
 
 .nav-x:active {
