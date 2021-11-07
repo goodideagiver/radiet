@@ -190,12 +190,8 @@ section {
 }
 
 .cennik-wrapper {
-    border: var(--accent-color) dashed 2px;
     padding: 5%;
     margin: 0 5%;
-}
-
-.cennik-wrapper {
     position: relative;
 }
 
@@ -224,11 +220,16 @@ section {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
     padding: 5%;
     text-align: center;
     background-color: transparent;
     gap: 10px;
+
+    grid-template-areas: 
+    "up up"
+    "left right"
 }
 
 .grid-item {
@@ -238,15 +239,26 @@ section {
     user-select: none;
 }
 
-.cennik-wrapper .grid-item {
-    transition: all 0.2s;
+.item-header {
+    grid-area: up;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cennik-wrapper .grid-item:hover {
-    transform: scale(1.1);
-    background-color: var(--accent-color);
-    color: white;
-    box-shadow: 1px 5px 30px 20px rgba(255, 255, 255, 0.986);
+.item-header > i {
+    margin: 0 5%;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.item-left {
+    grid-area: left;
+}
+
+.item-right {
+    grid-area: right;
 }
 
 .korzysci-wrapper {
