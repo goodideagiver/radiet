@@ -1,5 +1,7 @@
 :root {
     --accent-color: #93c039;
+    --standard-gap: 5%;
+    --standard-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.055);
 }
 
 * {
@@ -259,6 +261,43 @@ section {
 
 .item-right {
     grid-area: right;
+}
+
+#metamorfozy {
+    overflow-x: auto;
+}
+
+.metamorfozy-wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 800px;
+    user-select: none;
+    gap: var(--standard-gap);
+    padding: 0 var(--standard-gap);
+    margin: auto;
+}
+
+.met-item {
+    display: flex;
+    background-color: var(--accent-color);
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    border-radius: var(--standard-gap);
+    box-shadow: var(--standard-box-shadow);
+}
+
+.met-item img {
+    width: 100%;
+    border-radius: var(--standard-gap);
+    object-fit: cover;
+    height: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+.met-item p {
+    padding: var(--standard-gap);
+    margin: 0;
 }
 
 .korzysci-wrapper {
