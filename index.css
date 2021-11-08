@@ -1,7 +1,7 @@
 :root {
     --accent-color: #93c039;
     --standard-gap: 5%;
-    --standard-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.055);
+    --standard-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.11);
 }
 
 * {
@@ -273,7 +273,7 @@ section {
     width: 800px;
     user-select: none;
     gap: var(--standard-gap);
-    padding: 0 var(--standard-gap);
+    padding: var(--standard-gap);
     margin: auto;
 }
 
